@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://realestate-portal-one.vercel.app/sitemap.xml
+Sitemap: https://kuldeepyadav63962-arch.github.io/Propertys-Finder/sitemap.xml
