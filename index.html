@@ -46,7 +46,8 @@ h1,h2,h3,.serif{font-family:'Fraunces',serif;}
 a{color:inherit; text-decoration:none;}
 img{max-width:100%; display:block;}
 button{font-family:inherit; cursor:pointer;}
-.wrap{max-width:1200px; margin:0 auto; padding:0 20px;}
+.wrap{max-width:1200px; margin:0 auto; padding:0 22px;}
+.pad{padding-top:52px; padding-bottom:52px;}
 @media(min-width:900px){ .wrap{padding:0 40px;} }
 
 /* ---------- Header ---------- */
@@ -184,8 +185,9 @@ section.pad{padding:56px 0;}
 .cat-card span{font-size:.78rem; color:var(--ink-soft);}
 
 /* Why us */
-.why-grid{display:grid; gap:26px; grid-template-columns:1fr;}
-@media(min-width:760px){ .why-grid{grid-template-columns:repeat(4,1fr);} }
+.why-grid{display:grid; gap:20px; grid-template-columns:1fr;}
+@media(min-width:760px){ .why-grid{grid-template-columns:repeat(4,1fr); gap:26px;} }
+.why-item{background:#fff; border:1px solid var(--stone-line); border-radius:var(--radius-l); padding:22px 20px; box-shadow:var(--shadow-card);}
 .why-item .num{font-family:'Fraunces',serif; font-size:.85rem; color:var(--brass-deep); font-weight:600; margin-bottom:10px;}
 .why-item h3{font-size:1.08rem; margin-bottom:8px; color:var(--forest-deep);}
 .why-item p{font-size:.88rem; color:var(--ink-soft); line-height:1.6;}
@@ -1006,7 +1008,8 @@ function pageProperties(params){
   return `
   <div class="listing-head">
     <div class="wrap">
-      <h1 class="serif" style="font-size:1.5rem;color:var(--forest-deep);margin-bottom:14px;">Browse Properties</h1>
+      <h1 class="serif" style="font-size:1.5rem;color:var(--forest-deep);margin-bottom:4px;">Browse Properties</h1>
+      <p class="muted" style="font-size:.9rem;margin-bottom:14px;max-width:60ch;">Residential plots, ready homes, commercial shops, farmland and industrial units — every listing below has been personally verified by our team before going live.</p>
       <div class="filters-toggle">
         <span class="muted" style="font-size:.85rem;">${list.length} results</span>
         <button class="btn btn-ghost btn-sm" id="toggle-filters">Filters ▾</button>
@@ -1422,7 +1425,7 @@ function pageAbout(){
 function pageContact(){
   return `
   <section class="wrap pad">
-    <div class="section-head"><div><h2>Contact Us</h2><p>We usually reply within a few hours.</p></div></div>
+    <div class="section-head"><div><h2>Contact Us</h2><p>Have a question about a property, a site visit, or listing your own? We usually reply within a few hours — whichever way suits you best.</p></div></div>
     <div class="pd-layout" style="margin-top:0;">
       <div class="form-section">
         <h3>Send us a message</h3>
