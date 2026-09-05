@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://realestate-portal-one.vercel.app/sitemap.xml
